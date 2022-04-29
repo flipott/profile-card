@@ -1,0 +1,89 @@
+:root {
+    /* primary */
+    --dark-cyan: hsl(185, 75%, 39%);
+    --desat-blue: hsl(229, 23%, 23%);
+    --gray-blue: hsl(227, 10%, 46%);
+    /* neutral */
+    --gray: hsl(0, 0%, 59%);
+    font-size: 18px;
+}
+
+body, html {
+    font-family: 'Kumbh Sans', sans-serif;
+    /* 400, 700 */
+    height: 100%;
+    width: 100%;
+    background: var(--dark-cyan);
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+}
+
+.card {
+    height: fit-content;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.avatar {
+    position: absolute;
+    margin-top: 60px;
+}
+
+.avatar img {
+    object-fit: cover;
+    border-radius: 50%;
+    border: white 5px solid;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.title {
+    display: flex;
+    gap: 15px;
+    margin-top: 35px;
+    margin-bottom: 12px
+}
+
+.line {
+    border: 0.25px solid var(--gray);
+    width: 100%;
+}
+
+.stats {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+    margin: 25px 0;
+}
+
+.stats .bold {
+    text-align: center;
+}
+
+.category {
+    width: 100%;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.location {
+    margin-bottom: 20px;
+}
+
+
+p {
+    margin: 0;
+}
